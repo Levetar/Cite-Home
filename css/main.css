@@ -1,4 +1,11 @@
 /* ---Main--- */
+input, textarea {
+	outline:none;
+}
+input:active, textarea:active {
+	outline:none;
+}
+
 ul, li {
 	display: block;
 	margin:0;
@@ -100,6 +107,12 @@ a.offer__link {
 	text-transform: uppercase;
 	width: 195px;
 }
+
+a.offer__link:hover {
+	background: #fff;
+	color: #c0301c;
+	cursor: pointer;
+}
 /* ---Services--- */
 .services {
 	padding: 100px 0;
@@ -116,6 +129,20 @@ a.offer__link {
 	line-height: 1;
 	margin-top: 30px;
 	text-transform: uppercase;
+}
+
+.features__icon {
+	color: #c0301c;
+	font-size: 40px;
+	border: 1px solid #dddddd;
+	border-radius: 100%;
+	padding: 20px;
+}
+
+.features__icon:hover {
+	color: #fff;
+	background: #c0301c;
+	cursor: pointer;
 }
 
 .features__text {
@@ -205,6 +232,11 @@ a.call-block__link {
 	text-transform: uppercase;
 	width: 195px;
 }
+
+a.call-block__link:hover {
+	color: #c0301c;
+	background: #fff;
+}
 /* ---Blog--- */
 .blog {
 	padding: 100px 0;
@@ -244,6 +276,11 @@ a.call-block__link {
 	text-transform: uppercase;
 }
 
+.blog-posts__title:hover {
+	color: #c0301c;
+	cursor: pointer;
+}
+
 .blog-posts__by {
 	color: #777777;
 	font-family: 'Roboto Slab', serif;
@@ -272,6 +309,11 @@ a.call-block__link {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 35px;
+}
+
+.blog-posts__more:hover {
+	color: #c0301c;
+	cursor: pointer;
 }
 
 .glog__line {
@@ -313,6 +355,14 @@ a.call-block__link {
 	padding: 100px 0;
 }
 
+.fa-map-marker {
+	font-size: 20px;
+}
+
+.fa-mobile {
+	font-size:22px;
+}
+
 .form__input {
 	border: 1px solid #000;
 	font-size: 12px;
@@ -351,6 +401,20 @@ a.call-block__link {
 	width: 550px;
 }
 
+.form__input:hover, .form__textarea:hover {
+	border-color: #c0301c;
+}
+
+.form__submit:hover {
+	background: #c0301c;
+	color: #fff;
+	cursor: pointer;
+}
+
+.form__input:focus, .form__submit:focus, .form__textarea:focus {
+	border-color: #c0301c;
+}
+
 .contact-details {
 	height: 300px;
 	margin: 10px 0; 
@@ -383,12 +447,17 @@ a.call-block__link {
 	padding: 100px 0;
 }
 
-.fa {
-	border-radius: 50px;
+.fa-twitter {
+	border-radius: 100%;
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 16px;
 	line-height: 1;
 	margin: 5px;
 	padding: 8px;
+}
+.fa-twitter:hover {
+	background: #fff;
+	color: #c0301c;
+	cursor: pointer;
 }
