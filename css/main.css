@@ -21,7 +21,7 @@ ul, li {
 
 .title__main {
 	font-family: 'Montserrat', sans-serif;
-	line-height: 20px;
+	line-height: 1;
 	text-transform: uppercase;
 }
 
@@ -38,7 +38,7 @@ ul, li {
 .title__text {
 	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
-	line-height: 1;
+	line-height: 20px;
 }
 
 .title__text_white {
@@ -50,7 +50,6 @@ ul, li {
 	background: rgba(0,0,0,0.45) url(../img/header-bg.jpg);
 	background-size: cover;
 	color: #ffffff;
-	height: 770px;
 	padding-top: 40px;
 }
 
@@ -73,6 +72,13 @@ ul, li {
 	line-height: 24px;
 	text-decoration: none;
 }
+
+.navbar {
+	display: none;
+	padding: 0px;
+	border-radius: 5px;
+}
+
 .offer{
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
@@ -203,7 +209,7 @@ a.offer__link:hover {
 	background-blend-mode: multiply;
 	background: rgba(192,48,28,0.60) url(../img/call-block-bg.jpg);
 	background-size: cover;
-	height: 370px;
+	padding:100px 0;
 }
 
 .call-block {
@@ -215,7 +221,6 @@ a.offer__link:hover {
 	font-size: 30px;
 	line-height: 44px;
 	margin-bottom: 0px;
-	margin-top: 100px;
 }
 
 a.call-block__link {
@@ -226,7 +231,7 @@ a.call-block__link {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1;
-	margin: 50px auto;
+	margin:50px auto 0px auto;
 	padding: 15px 30px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -324,7 +329,6 @@ a.call-block__link:hover {
 .clients {
 	background: #f8f8f8;
 	color: #555555;
-	height: 475px;
 	padding: 80px 0;
 	width: auto;
 }
@@ -332,7 +336,7 @@ a.call-block__link:hover {
 .comments {
 	margin:0 auto;
 	text-align: center;
-	width: 770px;
+	max-width: 770px;
 }
 .comments__text {
 	font-family: 'Roboto Slab', serif;
@@ -349,6 +353,10 @@ a.call-block__link:hover {
 	font-weight: 400;
 	line-height: 1;
 	margin-top: 45px;
+}
+
+.clients__item__logo {
+	padding: 0 20px;
 }
 /* ---Contact--- */
 .contact {
@@ -436,8 +444,8 @@ a.call-block__link:hover {
 	font-size: 12px;
 	line-height: 20px;
 	font-weight: 400;
-	margin-top: 7px;
 	padding-left: 25px;
+	display: block;
 }
 /* ---Footer--- */
 .footer {
@@ -460,4 +468,185 @@ a.call-block__link:hover {
 	background: #fff;
 	color: #c0301c;
 	cursor: pointer;
+}
+@media (max-width: 576px) {
+
+	.collapse:not(.show) {
+    display: none !important;
+}
+	.menu {
+		flex-direction: column;
+		text-align: center;
+		margin-left: 50%;
+		margin-top: -5%;
+		margin-bottom: 25px;
+		font-size: 20px;
+	}
+
+	.navbar {
+		display: block;
+		margin-top: -5%;
+	}
+
+	.navbar-toggler {
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 0px;
+	width: 50%;
+    margin-left: 50%;
+    margin-top: 0%;
+	}
+
+	.blog-posts__calendar {
+		display: none;
+	}
+
+	.blog-posts {
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	.blog-posts__img {
+		width: 330px;
+	}
+
+	.clients__item {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.clients__item__logo {
+		margin: 10px 0;
+	}
+
+	.work-img__item {
+		height: 230px;
+		margin-top: 20px;
+		width: 250px;
+	}
+
+	.team-members__img {
+		width: 200px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.menu__item a {
+		font-size: 15px;
+	}
+
+
+	.menu {
+		margin-top: 24px;
+	}
+
+	.logo {
+		margin-left: -20px;
+	}
+
+	.work-img__item {
+		height: 180px;
+		margin-top: 20px;
+		width: 200px;
+	}
+
+	.blog-posts {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.clients__item__logo > img {
+		height: 16px;
+	}
+
+	.form__input, .form__textarea, .form__submit {
+		width: 500px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.menu {
+		margin-right: 170px;
+   		font-size: 26px;
+	}
+
+	.menu__item {
+		margin-top: -10px
+	}
+
+	.team-members__img {
+		width: 170px;
+	}
+
+	.work-img__item {
+		height: 190px;
+		width: 210px;
+	}
+
+	.blog-posts__img {
+		width: 300px;
+	}
+
+	.blog-posts__calendar {
+		font-size: 15px;
+		width: 50px;
+		padding: 5px 10px;
+	}
+
+	.calendar__month {
+		font-size: 12px;
+	}
+
+	.blog-posts__title {
+		font-size: 14px;
+		margin-bottom: 12px;
+	}
+
+	.blog-posts__heading {
+		margin-left: 7px;
+	}
+
+	.blog-posts__by {
+		font-size: 12px;
+	}
+
+	.blog-posts__text {
+		font-size: 12px;
+	}
+
+	.clients__item__logo > img {
+		height: 20px;
+	}
+
+	.form__textarea {
+		width: 350px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px)  {
+	.menu {
+		margin-right: 100px;
+   		font-size: 26px;
+	}
+
+	.team-members__img {
+    width: 220px;
+	}
+
+	.work-img__item {
+    height: 260px;
+    width: 290px;
+	}
+
+	.blog-posts__img {
+		width: 400px;
+	}
+
+	.form__input {
+		width: 300px;
+	}
+}
+
+@media (min-width: 1200px) {
+	
 }
